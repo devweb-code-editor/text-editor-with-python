@@ -12,5 +12,13 @@ def saveFile():
     global filename
     t = text.get(0.0,END)#store all the text from text box
     f= open(filename,'w')#open the file
-    f.write(t)#store 
+    f.write(t)#store
     f.close()
+def saveAs():
+    f = asksaveasfile(mode='w',defaultextension='.txt')
+    t = text.get(0.0,END)
+    try:
+        f.write(t.rstrip())
+    except:
+        showerror(title="Oops!", message="Unable to save file..")
+        

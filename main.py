@@ -21,4 +21,9 @@ def saveAs():
         f.write(t.rstrip())
     except:
         showerror(title="Oops!", message="Unable to save file..")
-        
+
+def openFile():
+    f = askopenfile(mode='r')
+    t=f.read()
+    text.delete(0.0, END)
+    text.insert(0.0, t)

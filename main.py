@@ -44,3 +44,7 @@ filemenu.add_command(lable="Save", command=saveFile)
 filemenu.add_command(lable="Save As..", command=saveAs)
 filemenu.add_command()
 filemenu.add_command(lable="Quit", command=root.quit)
+menubar.add_cascade(filemenu)
+
+root.config(menu=menubar)
+root.mainloop()

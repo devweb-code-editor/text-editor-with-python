@@ -15,4 +15,9 @@ now, I am currently use python 3.7.1
 requirement         
 ``` install pip ```
 if tkinter is not install       
-``` pip install tkinter```     
+``` pip install tkinter``` 
+
+
+***HirushaR***              
+***Hirusha Randunu***               
+***hirusharandunu11@gmail.com***                

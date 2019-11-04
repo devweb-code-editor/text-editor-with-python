@@ -27,3 +27,11 @@ def openFile():
     t=f.read()
     text.delete(0.0, END)
     text.insert(0.0, t)
+
+root = Tk()
+root.title("My python text editor")
+root.minsize(width=400, height=400)
+root.maxsize(width=400, height=400)
+
+text = Text(root, width=400, height=400)
+text.pack()

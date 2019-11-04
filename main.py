@@ -35,3 +35,12 @@ root.maxsize(width=400, height=400)
 
 text = Text(root, width=400, height=400)
 text.pack()
+
+menubar = Menu(root)
+filemenu = Menu(menubar)
+filemenu.add_command(lable="New", command=newFile)
+filemenu.add_command(lable="Open", command=openFile)
+filemenu.add_command(lable="Save", command=saveFile)
+filemenu.add_command(lable="Save As..", command=saveAs)
+filemenu.add_command()
+filemenu.add_command(lable="Quit", command=root.quit)
